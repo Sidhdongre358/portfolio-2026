@@ -1,36 +1,51 @@
-// import { FaDownload } from "react-icons/fa";
-import bg from "../assets/bg.png";
+// // import { FaDownload } from "react-icons/fa";
+// import bg from "../assets/bg.png";
 
-function Hero() {
-    return (
-        <section
-            className="hero"
-            style={{
-                backgroundImage: `
+// function Hero() {
+//     return (
+//         <section
+//             className="hero"
+//             style={{
+//                 backgroundImage: `
       
-          url(${bg})
-        `,
-            }}
-        >
-            {/* <div className="hero-card">
-        <h1>Sidarth Dongre</h1>
-        <h2>Java Backend Developer</h2>
-
-        <p>
-          Building scalable enterprise backend systems using Java, Spring Boot,
-          Microservices, and 3DEXPERIENCE ENOVIA.
-        </p>
-
-        <a href="/resume.pdf" download className="resume-btn">
-          <FaDownload /> Download Resume
-        </a>
-      </div> */
-            }
+//           url(${bg})
+//         `,
+//             }}
+//         >
+           
            
 
 
-        </section>
-    );
+//         </section>
+//     );
+// }
+
+// export default Hero;
+import { FaDownload } from "react-icons/fa";
+import bg from "../assets/bg.png";
+
+function Hero() {
+  return (
+    <section
+      className="hero"
+      
+    >
+      <div className="hero-card">
+        <h1>Hi, I’m Sidarth Dongre</h1>
+        <h2>Java Developer | PLM 3D Experience</h2>
+        <p>
+          I'm specialize in building robust, production-ready backend systems with
+          Spring Boot and Microservices. I have a strong background in PLM 3D Experience and Data migration, leveraging my expertise to optimize product lifecycle management processes. With a passion for
+          clean code and scalable architecture, I deliver efficient solutions that drive
+          business success.
+        </p>
+
+        <a href="/resume.pdf" className="resume-btn">
+          <FaDownload /> Download Resume
+        </a>
+      </div>
+    </section>
+  );
 }
 
 export default Hero;

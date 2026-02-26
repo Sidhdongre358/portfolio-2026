@@ -10,6 +10,7 @@ body {
   background: linear-gradient(135deg, #020617, #0f172a, #1e293b);
   color: #f1f5f9;
   scroll-behavior: smooth;
+  line-height: 1.6;
 }
 
 /* NAVBAR */
@@ -18,24 +19,26 @@ body {
   top: 0;
   background: rgba(2, 6, 23, 0.85);
   backdrop-filter: blur(12px);
-  padding: 14px 40px;
+  padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap; /* ✅ allows wrapping on smaller screens */
   z-index: 1000;
 }
 
 .navbar h2 {
   color: #38bdf8;
-  font-size: 1.5rem;
+  font-size: clamp(1.2rem, 2.5vw, 1.6rem);
 }
 
 .navbar a {
-  margin-left: 20px;
+  margin-left: 1rem;
   text-decoration: none;
   color: white;
   font-weight: 500;
   transition: 0.3s;
+  font-size: clamp(0.9rem, 2vw, 1rem);
 }
 
 .navbar a:hover {
@@ -49,23 +52,19 @@ body {
   justify-content: center;
   align-items: center;
   padding: 4rem 1.5rem;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  text-align: center;
 }
 
 .hero-card {
- 
-  padding: 3.5rem 4rem;
+  padding: clamp(2rem, 5vw, 4rem);
   border-radius: 24px;
-
-  text-align: center;
+  max-width: 90%;
   animation: fadeIn 1s ease forwards;
 }
 
 /* HERO TEXT */
 .hero-card h1 {
-  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  font-size: clamp(2rem, 5vw, 3.5rem);
   font-weight: 700;
   background: linear-gradient(to right, #38bdf8, #22d3ee);
   -webkit-background-clip: text;
@@ -75,18 +74,17 @@ body {
 
 .hero-card h2 {
   margin-top: 0.8rem;
-  font-size: clamp(1.2rem, 3vw, 1.8rem);
+  font-size: clamp(1.1rem, 3vw, 1.8rem);
   color: #cbd5f5;
 }
 
 .hero-card p {
   margin-top: 1.2rem;
-  font-size: clamp(1rem, 2.5vw, 1.15rem);
+  font-size: clamp(0.95rem, 2.5vw, 1.15rem);
   color: #e2e8f0;
   line-height: 1.7;
   max-width: 750px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-inline: auto;
 }
 
 /* RESUME BUTTON */
@@ -96,7 +94,7 @@ body {
   gap: 10px;
   margin-top: 2rem;
   padding: 0.9rem 2.5rem;
-  font-size: 1rem;
+  font-size: clamp(0.9rem, 2vw, 1rem);
   border-radius: 999px;
   background: linear-gradient(to right, #38bdf8, #22d3ee);
   color: #020617;
@@ -112,13 +110,13 @@ body {
 
 /* SECTIONS */
 section {
-  padding: 80px 8%;
+  padding: clamp(60px, 8vw, 100px) 5%;
 }
 
 section h2 {
   text-align: center;
   margin-bottom: 40px;
-  font-size: clamp(1.8rem, 4vw, 2.4rem);
+  font-size: clamp(1.6rem, 4vw, 2.4rem);
   color: #38bdf8;
 }
 
@@ -128,23 +126,23 @@ section h2 {
   margin: auto;
   text-align: center;
   line-height: 1.8;
-  font-size: 1.1rem;
+  font-size: clamp(1rem, 2.5vw, 1.1rem);
   color: #cbd5f5;
 }
 
 /* SKILLS */
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); /* ✅ more flexible */
   gap: 25px;
 }
 
 .skills-grid div {
   background: rgba(30, 41, 59, 0.6);
-  padding: 25px;
+  padding: clamp(18px, 3vw, 25px);
   border-radius: 15px;
   text-align: center;
-  font-size: 1.05rem;
+  font-size: clamp(0.9rem, 2vw, 1.05rem);
   transition: 0.3s;
 }
 
@@ -183,12 +181,12 @@ section h2 {
 .social-links {
   display: flex;
   justify-content: center;
-  gap: 40px;
+  gap: 30px;
   flex-wrap: wrap;
 }
 
 .social-links a {
-  font-size: 1.8rem;
+  font-size: clamp(1.4rem, 4vw, 1.8rem);
   color: white;
   text-decoration: none;
   transition: 0.3s;
@@ -219,25 +217,21 @@ footer {
   }
 }
 
-/* TABLET */
+/* RESPONSIVE BREAKPOINTS */
 @media (max-width: 1024px) {
   .hero-card {
-    padding: 3rem 2.5rem;
+    padding: 2.5rem;
   }
 }
 
-/* MOBILE */
 @media (max-width: 768px) {
   .navbar {
-    padding: 12px 20px;
+    flex-direction: column; /* ✅ stack items */
+    gap: 10px;
   }
 
   section {
-    padding: 60px 5%;
-  }
-
-  .hero-card {
-    padding: 2.5rem 1.8rem;
+    padding: 50px 5%;
   }
 
   .resume-btn {
@@ -246,19 +240,17 @@ footer {
   }
 }
 
-/* SMALL MOBILE */
 @media (max-width: 480px) {
   .hero-card {
-    padding: 2rem 1.2rem;
+    padding: 1.5rem;
     border-radius: 18px;
   }
 
   .hero-card p {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
   }
 }
 
-/* ULTRA WIDE SCREENS */
 @media (min-width: 1600px) {
   .hero-card {
     max-width: 1100px;

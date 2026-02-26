@@ -1,4 +1,4 @@
-import { FaDownload } from "react-icons/fa";
+
 
 function Navbar() {
     return (
@@ -6,9 +6,7 @@ function Navbar() {
             <h2>Sidarth Dongre</h2>
             <div>
                  
-                <a href="/Resume.pdf" download >
-                    <FaDownload /> Resume
-                </a>
+               
                 <a href="#experience">Experience</a>
                 <a href="#projects">Projects</a>
                 <a href="#skills">Skills</a>
