@@ -1,28 +1,7 @@
-// // import { FaDownload } from "react-icons/fa";
-// import bg from "../assets/bg.png";
-
-// function Hero() {
-//     return (
-//         <section
-//             className="hero"
-//             style={{
-//                 backgroundImage: `
-      
-//           url(${bg})
-//         `,
-//             }}
-//         >
-           
-           
 
 
-//         </section>
-//     );
-// }
-
-// export default Hero;
 import { FaDownload } from "react-icons/fa";
-import bg from "../assets/bg.png";
+
 
 function Hero() {
   return (
