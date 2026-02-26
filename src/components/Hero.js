@@ -1,4 +1,4 @@
-import { FaDownload } from "react-icons/fa";
+// import { FaDownload } from "react-icons/fa";
 import bg from "../assets/bg.png";
 
 function Hero() {
