@@ -1,0 +1,96 @@
+#skills {
+  padding: clamp(50px, 7vw, 90px) 5%;
+}
+
+#skills h2 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: clamp(1.7rem, 4vw, 2.4rem);
+  background: linear-gradient(to right, #38bdf8, #22d3ee);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  gap: 35px; /* reduced gap */
+}
+
+/* Category Card */
+.skills-category {
+  background: rgba(15, 23, 42, 0.55);
+  padding: 22px; /* reduced padding */
+  border-radius: 18px;
+  border: 1px solid rgba(56, 189, 248, 0.12);
+  backdrop-filter: blur(10px);
+}
+
+/* Category Title */
+.skills-category h3 {
+  text-align: center;
+  margin-bottom: 18px;
+  font-size: clamp(1.1rem, 3vw, 1.4rem);
+  color: #22d3ee;
+}
+
+/* Grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* smaller cards */
+  gap: 14px; /* tighter gap */
+}
+
+/* Skill Card */
+.skills-grid div {
+  background: linear-gradient(135deg, rgba(30,41,59,0.85), rgba(2,6,23,0.9));
+  padding: 12px 10px; /* smaller padding */
+  border-radius: 14px;
+  text-align: center;
+  font-size: 0.85rem; /* smaller text */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px; /* reduced gap */
+  transition: all 0.3s ease;
+  box-shadow: 0 0 8px rgba(56,189,248,0.08);
+}
+
+/* Hover */
+.skills-grid div:hover {
+  transform: translateY(-4px) scale(1.03);
+  background: linear-gradient(135deg, rgba(56,189,248,0.22), rgba(34,211,238,0.12));
+  box-shadow: 0 0 14px rgba(56,189,248,0.45);
+}
+
+/* Icons */
+.skills-grid svg {
+  font-size: 1.6rem; /* smaller icon */
+  color: #38bdf8;
+}
+
+/* AI special */
+.ai-category {
+  border: 1px solid rgba(56,189,248,0.35);
+  box-shadow: 0 0 18px rgba(56,189,248,0.12);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .skills-category {
+    padding: 18px;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  }
+
+  .skills-grid div {
+    font-size: 0.8rem;
+    padding: 10px 8px;
+  }
+
+  .skills-grid svg {
+    font-size: 1.4rem;
+  }
+}

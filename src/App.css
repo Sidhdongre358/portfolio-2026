@@ -13,100 +13,12 @@ body {
   line-height: 1.6;
 }
 
-/* NAVBAR */
-.navbar {
-  position: sticky;
-  top: 0;
-  background: rgba(2, 6, 23, 0.85);
-  backdrop-filter: blur(12px);
-  padding: 1rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap; /* ✅ allows wrapping on smaller screens */
-  z-index: 1000;
-}
 
-.navbar h2 {
-  color: #38bdf8;
-  font-size: clamp(1.2rem, 2.5vw, 1.6rem);
-}
 
-.navbar a {
-  margin-left: 1rem;
-  text-decoration: none;
-  color: white;
-  font-weight: 500;
-  transition: 0.3s;
-  font-size: clamp(0.9rem, 2vw, 1rem);
-}
 
-.navbar a:hover {
-  color: #38bdf8;
-}
 
-/* HERO */
-.hero {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 4rem 1.5rem;
-  text-align: center;
-}
 
-.hero-card {
-  padding: clamp(2rem, 5vw, 4rem);
-  border-radius: 24px;
-  max-width: 90%;
-  animation: fadeIn 1s ease forwards;
-}
 
-/* HERO TEXT */
-.hero-card h1 {
-  font-size: clamp(2rem, 5vw, 3.5rem);
-  font-weight: 700;
-  background: linear-gradient(to right, #38bdf8, #22d3ee);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-shadow: 0 0 25px rgba(56, 189, 248, 0.4);
-}
-
-.hero-card h2 {
-  margin-top: 0.8rem;
-  font-size: clamp(1.1rem, 3vw, 1.8rem);
-  color: #cbd5f5;
-}
-
-.hero-card p {
-  margin-top: 1.2rem;
-  font-size: clamp(0.95rem, 2.5vw, 1.15rem);
-  color: #e2e8f0;
-  line-height: 1.7;
-  max-width: 750px;
-  margin-inline: auto;
-}
-
-/* RESUME BUTTON */
-.resume-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  margin-top: 2rem;
-  padding: 0.9rem 2.5rem;
-  font-size: clamp(0.9rem, 2vw, 1rem);
-  border-radius: 999px;
-  background: linear-gradient(to right, #38bdf8, #22d3ee);
-  color: #020617;
-  font-weight: 600;
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
-
-.resume-btn:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 15px rgba(56, 189, 248, 0.6);
-}
 
 /* SECTIONS */
 section {
@@ -120,82 +32,16 @@ section h2 {
   color: #38bdf8;
 }
 
-/* ABOUT */
-#about p {
-  max-width: 900px;
-  margin: auto;
-  text-align: center;
-  line-height: 1.8;
-  font-size: clamp(1rem, 2.5vw, 1.1rem);
-  color: #cbd5f5;
-}
 
-/* SKILLS */
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); /* ✅ more flexible */
-  gap: 25px;
-}
 
-.skills-grid div {
-  background: rgba(30, 41, 59, 0.6);
-  padding: clamp(18px, 3vw, 25px);
-  border-radius: 15px;
-  text-align: center;
-  font-size: clamp(0.9rem, 2vw, 1.05rem);
-  transition: 0.3s;
-}
 
-.skills-grid div:hover {
-  transform: translateY(-8px);
-  background: rgba(56, 189, 248, 0.2);
-}
 
-/* EXPERIENCE */
-#experience ul {
-  max-width: 900px;
-  margin: auto;
-  margin-top: 20px;
-}
 
-#experience li {
-  margin-bottom: 12px;
-  line-height: 1.6;
-}
 
-/* PROJECTS */
-.project {
-  background: rgba(30, 41, 59, 0.7);
-  padding: 25px;
-  border-radius: 15px;
-  margin-bottom: 20px;
-  transition: 0.3s;
-}
 
-.project:hover {
-  transform: scale(1.02);
-  background: rgba(56, 189, 248, 0.15);
-}
 
-/* CONTACT */
-.social-links {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
-}
 
-.social-links a {
-  font-size: clamp(1.4rem, 4vw, 1.8rem);
-  color: white;
-  text-decoration: none;
-  transition: 0.3s;
-}
 
-.social-links a:hover {
-  color: #38bdf8;
-  transform: scale(1.2);
-}
 
 /* FOOTER */
 footer {
@@ -205,54 +51,6 @@ footer {
   color: #94a3b8;
 }
 
-/* ANIMATION */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(25px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 
-/* RESPONSIVE BREAKPOINTS */
-@media (max-width: 1024px) {
-  .hero-card {
-    padding: 2.5rem;
-  }
-}
 
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column; /* ✅ stack items */
-    gap: 10px;
-  }
 
-  section {
-    padding: 50px 5%;
-  }
-
-  .resume-btn {
-    width: 100%;
-    justify-content: center;
-  }
-}
-
-@media (max-width: 480px) {
-  .hero-card {
-    padding: 1.5rem;
-    border-radius: 18px;
-  }
-
-  .hero-card p {
-    font-size: 0.9rem;
-  }
-}
-
-@media (min-width: 1600px) {
-  .hero-card {
-    max-width: 1100px;
-  }
-}

@@ -1,0 +1,103 @@
+.courses-section {
+  padding: 90px 10%;
+  text-align: center;
+  background: radial-gradient(circle at top, #020617, #000000);
+  color: #e5e7eb;
+}
+
+.courses-subtitle {
+  color: #cbd5f5;
+  margin-bottom: 50px;
+  font-size: 1.05rem;
+}
+
+/* Grid */
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+/* Card */
+.course-card {
+  padding: 26px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.1);
+  transition: all 0.4s ease;
+  box-shadow: 0 10px 30px rgba(56,189,248,0.15);
+}
+
+/* Highlight Airtribe */
+.course-card.highlight {
+  border: 1px solid rgba(56,189,248,0.6);
+  box-shadow: 0 0 35px rgba(56,189,248,0.35);
+}
+
+/* Hover */
+.course-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 0 45px rgba(56,189,248,0.45);
+}
+
+/* Icons */
+.course-icon {
+  font-size: 2.8rem;
+  margin-bottom: 12px;
+}
+
+/* Colors */
+.backend { color: #38bdf8; }
+.cloud { color: #818cf8; }
+.ai { color: #22d3ee; }
+.tools { color: #facc15; }
+
+/* Text */
+.course-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 6px;
+  color: #f1f5f9;
+}
+
+.platform {
+  font-size: 0.9rem;
+  color: #cbd5f5;
+  margin-bottom: 10px;
+}
+
+/* Tag */
+.tag {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: rgba(56,189,248,0.15);
+  color: #7dd3fc;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .courses-section {
+    padding: 70px 6%;
+  }
+
+  .course-card {
+    padding: 22px;
+  }
+
+  .course-icon {
+    font-size: 2.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .courses-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .course-card h3 {
+    font-size: 1.05rem;
+  }
+}
