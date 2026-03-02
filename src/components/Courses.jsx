@@ -1,5 +1,5 @@
 import "./cssfiles/Courses.css";
-import { FaJava, FaAws, FaRobot, FaTools, FaCloud } from "react-icons/fa";
+import { FaJava, FaAws, FaRobot, FaTools } from "react-icons/fa";
 import { SiSpringboot, SiDocker, SiGithub, SiOpenai } from "react-icons/si";
 
 function Courses() {
