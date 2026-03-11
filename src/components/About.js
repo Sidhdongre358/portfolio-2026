@@ -7,6 +7,7 @@ function About() {
 
       <div className="about-card">
 
+
         <p>
           I am a <span>Java Backend Developer</span> with over <span>4+ years of experience</span> 
           building scalable and high-performance enterprise applications using 
