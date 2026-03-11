@@ -29,8 +29,8 @@ function Hero() {
         </p>
 
         <div className="hero-buttons">
-          <a href="/resume.pdf" download="Sidarth_Dongre_Resume.pdf" target="_blank"
-            rel="noreferrer" className="resume-btn">
+          <a href="/resume.pdf" download="Sidarth_Dongre_Resume.pdf" 
+            className="resume-btn">
             <FaDownload /> Download Resume
           </a>
           <a href="#contact" className="contact-btn">
