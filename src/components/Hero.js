@@ -33,8 +33,6 @@ function Hero() {
             rel="noreferrer" className="resume-btn">
             <FaDownload /> Download Resume
           </a>
-
-
           <a href="#contact" className="contact-btn">
             <FaEnvelope /> Contact Me
           </a>
