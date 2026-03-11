@@ -15,23 +15,25 @@ function Hero() {
         </h2>
 
         <p>
-          I specialize in building <span>scalable, production-ready backend systems</span> 
-          using <span>Java, Spring Boot, and Microservices</span>.  
-          With strong expertise in <span>PLM 3DEXPERIENCE ENOVIA</span> and 
-          <span> Data Migration</span>, I help organizations optimize product lifecycle 
+          I specialize in building <span>scalable, production-ready backend systems</span>
+          using <span>Java, Spring Boot, and Microservices</span>.
+          With strong expertise in <span>PLM 3DEXPERIENCE ENOVIA</span> and
+          <span> Data Migration</span>, I help organizations optimize product lifecycle
           management and engineering data workflows.
         </p>
 
         <p>
-          Passionate about <span>clean code</span>, <span>cloud-native architecture</span>, 
-          and <span>AI-assisted development</span>, I focus on delivering efficient, 
+          Passionate about <span>clean code</span>, <span>cloud-native architecture</span>,
+          and <span>AI-assisted development</span>, I focus on delivering efficient,
           maintainable, and high-impact solutions.
         </p>
 
         <div className="hero-buttons">
-          <a href="/resume.pdf" className="resume-btn">
+          <a href="/resume.pdf" download="Sidarth_Dongre_Resume.pdf" target="_blank"
+            rel="noreferrer" className="resume-btn">
             <FaDownload /> Download Resume
           </a>
+
 
           <a href="#contact" className="contact-btn">
             <FaEnvelope /> Contact Me
